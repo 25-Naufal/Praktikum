@@ -1,0 +1,65 @@
+<style media="screen">
+    .container{
+        width:50%;
+        height: 200px;
+        overflow: auto;
+        margin-left: 0 auto;
+    }
+    .static{ position: static; border: 2px solid green; }
+    .relative{
+        position: relative;
+        border: 2px solid red;
+        left: 20px; /* jarak dari posisi paling kiri sebesar 20px */
+        bottom: 0; /* jarak dari palaing bawah sebesar 0px */
+    }
+    .absolute{position: absolute; border: 2px solid blue; left: 20px; bottom: 40px; }
+    .fixed{ position: fixed; border: 2px solid black; bottom: 0; right: 0; }
+    .sticky{
+        position: sticky;
+        border: 2px solid yellow;
+        top: 0;
+        left: 20px;
+        background: darkblue;
+        color: white;
+    }
+</style>
+
+<div class="container">
+    <p class="sticky">
+        ini adalah contoh dari posisi sticky
+    </p>
+
+    <p> class="static">
+        <b>Ini adlah conoh dari posisi static</b> <br>
+        Many novice writers tend to make a sharp distinction between content and style, 
+        thinking that a paper can be strong in one and weak in the other, 
+        but focusing on organization shows how content and style converge in deliberative academic writing. 
+        Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, 
+        coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, 
+        worth our attention here.
+    </p>
+
+    <p class="relative">
+        <b>Ini adalah contoh dari posisi relative</b> <br>
+         Many novice writers tend to make a sharp distinction between content and style, 
+        thinking that a paper can be strong in one and weak in the other, 
+        but focusing on organization shows how content and style converge in deliberative academic writing. 
+        Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, 
+        coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, 
+        worth our attention here.
+    </p>
+
+    <p class="absolute">
+        <b>Ini adalah contoh dari posisi absolute</b> <br>
+        Many novice writers tend to make a sharp distinction between content and style, 
+        thinking that a paper can be strong in one and weak in the other, 
+        but focusing on organization shows how content and style converge in deliberative academic writing. 
+        Your professors will view even the most elegant prose as rambling and tedious if there isn’t a careful, 
+        coherent argument to give the text meaning. Paragraphs are the “stuff ” of academic writing and, thus, 
+        worth our attention here.
+    </p>
+
+    <p class="fixed">
+        ini merupakan conoth posisi fixed
+    </p>
+</div>
